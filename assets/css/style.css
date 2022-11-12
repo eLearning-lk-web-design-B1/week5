@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+.navbar{
+    background-color:rgb(0 1 0 / 71%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav{
+    padding: 5px 0;
+    width:80%;
+    margin:auto;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li{
+    text-transform: uppercase;
+    float: left;
+    margin-right: 10px;
+    list-style-type: none;
+    font-size: 10px;
+    color: #cbcbcb;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#banner-section{
+    background-image: url("../img/slide1.jpg");
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    margin-bottom:500px;
+}
+
+.banner-wrapper{
+     height:600px;
+}
+
+.uni-logo{
+    margin-top: 100px;
+}
+.banner-title{
+    color:#fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 25px;
+}
+.search-wrapper{
+    height:fit-content;
+    margin-bottom:50px
+}
+.search-bar{
+    width:300px;
+    height:20px;
+    border:none;
+    padding:0;
+
+}
+.search-btn{
+    height: 20px;
+    margin: 0;
+    margin-left: -5px;
+    border:none;
+    background-color:#fff;
+
+}
+.action-btn{
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.banner-hi{
+    background-color: #87d37c;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    height: 30px;
+    position: relative;
+    bottom: 0;
+    left: 45%;
+    border-radius: 7px;
+    font-size: 24px;
+    font-family:'Gochi Hand', cursive
+}
+.banner-hi:after{
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    width: 28px;
+    background-image: url("../img/icon.png");
+    height:37px;
+    left: 40%;
+}
