@@ -215,6 +215,36 @@ body{
     margin: auto;
 }
 
+#students{
+    background-color:#f7f8f9;
+}
+#students .section-title, #students .section-title-description{
+    text-align: left;
+    width: 100%;
+}
+.students-grid{
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+.student-col{
+    display: inline-grid;
+}
+
+.students-img{
+    width:100%;
+}
+
+.student-title{
+    font-size: 20px;
+}
+.student-num{
+    font-size:40px;
+    color:#87d37c
+}
+.student-des{
+    margin-right: 10px;
+}
 
 @media (max-width: 768px) {
     .desktop-menu{
