@@ -16,7 +16,7 @@
 			<nav class="navbar">
 				<div class="nav">
 					<img src="assets/img/logo.png" />
-					<ul class="menu">
+					<ul class="menu desktop-menu">
 						<li>Home</li>
 						<li>Demo</li>
 						<li>Pages</li>
@@ -24,6 +24,10 @@
 						<li>Shop</li>
 						<li>Contact</li>
 					</ul>
+					<button id="menuBtn" class="mobile">
+						<i class="fa-solid fa-bars menu-icon"></i>
+					</button>
+
 				</div>
 			</nav>
 		</header>
@@ -51,6 +55,32 @@
 			</div>
 			<div class="banner-hi">Hi there</div>
 		</section>
+		<div id="mobileMenu" class="mobile">
+			<ul class="mobile-menu">
+				<li>Home</li>
+				<li>Demo</li>
+				<li>Pages</li>
+				<li>Blog</li>
+				<li>Shop</li>
+				<li>Contact</li>
+			</ul>
+			<button id="closeBtn">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
 		</div>
+
+		<script>
+			let menuBtn = document.getElementById('menuBtn');
+			let closeBtn = document.getElementById('closeBtn');
+			let mobileMenu = document.getElementById('mobileMenu');
+
+			menuBtn.addEventListener('click', () =>{
+				mobileMenu.classList.add('active')
+			})
+
+			closeBtn.addEventListener('click', function(){
+				mobileMenu.classList.remove('active')
+			})
+		</script>
 	</body>
 </html>
